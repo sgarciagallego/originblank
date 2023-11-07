@@ -1,0 +1,20 @@
+.button {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 0.25rem;
+  border: 0.125rem solid rgb(var(--O-500-rgb));
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  position: relative;
+  background: rgb(var(--orange-rgb));
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgb(var(--foreground-rgb));
+  transition: var(--transition-background);
+
+  &:hover {
+    border: 0.125rem solid rgb(var(--orange-rgb));
+    background: rgb(var(--O-200-rgb));
+  }
+}
