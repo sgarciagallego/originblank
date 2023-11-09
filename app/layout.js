@@ -1,7 +1,7 @@
 import localFont from "next/font/local"
 import "./globals.scss"
-import Navbar from "@/components/molecules/navbar"
-import Footer from "@/components/molecules/footer"
+import Navbar from "@/components/molecules/navbar/navbar"
+import Footer from "@/components/molecules/footer/footer"
 
 const brockmann = localFont({
   src: [

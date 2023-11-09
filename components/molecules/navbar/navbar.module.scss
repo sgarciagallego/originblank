@@ -121,7 +121,13 @@
       list-style-type: none;
 
       > li {
-        margin: 0.5rem;
+        &:not(:last-of-type) {
+          margin: 0.5rem;
+        }
+
+        &:last-of-type {
+          margin: 0.5rem 0 0.5rem 0.5rem;
+        }
 
         > a {
           padding: 0.5rem;

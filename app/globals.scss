@@ -13,7 +13,7 @@ $type-ratios: (
   @return map-get($type-ratios, $key);
 }
 
-$type-base-size: 1rem;
+$type-base-size: 1.125rem;
 $type-size-ratio: type-ratio("goldenRatio");
 
 $type-levels: 4, 3, 2, 1;
@@ -123,7 +123,7 @@ input, button, textarea, select {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 p, li, h1, h2, h3, h4 {
@@ -135,13 +135,17 @@ p, li {
   hyphens: auto;
 }
 
+p:not(:last-of-type) {
+  margin-bottom: 2em;
+}
+
 code {
   font-family: var(--font-mono);
 }
 
 .container {
   @media (min-width: 320px) {
-    max-width: 300px;
+    max-width: 280px;
   }
 
   @media (min-width: 480px) {

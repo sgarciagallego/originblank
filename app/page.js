@@ -1,5 +1,4 @@
-import CTA from "@/components/atoms/cta"
-import Hyperlink from "@/components/atoms/hyperlink"
+import Accordion from "@/components/molecules/accordion/accordion"
 
 export const metadata = {
   title: "Origin Blank | Independent Brighton-based Branding Agency",
@@ -8,8 +7,6 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="container">
-      <h1>Creating experiences designed to scale</h1>
-    </div>
+    <div className="container"></div>
   )
 }

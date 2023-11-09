@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import styles from "./navbar.module.scss"
-import Vector from "../atoms/vector"
+import Vector from "../../atoms/vector"
 
 export default function Navbar() {
   const [viewportWidth, setViewportWidth] = useState(0)

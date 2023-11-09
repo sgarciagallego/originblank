@@ -1,11 +1,13 @@
 import Link from "next/link"
-import styles from "./cta.module.scss"
+import styles from "./ctaLight.module.scss"
+import Vector from "../vector"
 
-export default function CTA({ href, children }) {
+export default function CtaLight({ href, children }) {
   return (
     <Link href={href} passHref legacyBehavior>
       <Link className={styles.button}>
         {children}
+        <Vector name="arrowRight" />
       </Link>
     </Link>
   )

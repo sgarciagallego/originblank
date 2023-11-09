@@ -1,0 +1,36 @@
+.button {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 0.25rem;
+  border: 0.125rem solid rgb(var(--P-500-rgb));
+  padding: 0.75rem 1.125rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  position: relative;
+  background: rgb(var(--pear-rgb));
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgb(var(--foreground-rgb));
+
+  &,
+  & > svg {
+    transition: var(--transition-background);
+  }
+
+  & > svg {
+    min-width: 1.875rem;
+    max-width: 1.875rem;
+    fill: rgb(var(--foreground-rgb));;
+  }
+
+  &:hover {
+    border: 0.125rem solid rgb(var(--pear-rgb));
+    background: rgb(var(--P-200-rgb));
+
+    & > svg {
+      transform: translateX(0.25rem);
+    }
+  }
+}

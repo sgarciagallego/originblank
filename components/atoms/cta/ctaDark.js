@@ -1,11 +1,11 @@
 import Link from "next/link"
-import styles from "./hyperlink.module.scss"
-import Vector from "./vector"
+import styles from "./ctaDark.module.scss"
+import Vector from "../vector"
 
-export default function Hyperlink({ href, children }) {
+export default function CtaDark({ href, children }) {
   return (
     <Link href={href} passHref legacyBehavior>
-      <Link className={styles.hyperlink}>
+      <Link className={styles.button}>
         {children}
         <Vector name="arrowRight" />
       </Link>
