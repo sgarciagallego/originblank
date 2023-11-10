@@ -34,7 +34,7 @@ export default function Accordion({
 
   useEffect(() => {
     setAccordionOpen(active)
-  }, [])
+  }, [active])
 
   return (
     <div className={styles.wrapper}>

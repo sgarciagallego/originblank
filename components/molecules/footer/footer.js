@@ -9,7 +9,7 @@ export default function Footer() {
       <footer className="container">
         <div className={styles.identity}>
           <WordMark />
-          <CtaDark href="">Start a project</CtaDark>
+          <CtaDark href="/contact">Start a project</CtaDark>
         </div>
         <section className={styles.map}>
           <div className={styles.navigate}>
@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
           <div className={styles.findUs}>
             <h2>Find us</h2>
-            <p>Are you feeling a face-to-face is more efficient? Hit us up, and let's make it happen!</p>
+            <p>Are you feeling a face-to-face is more efficient? Hit us up, and let&apos;s make it happen!</p>
           </div>
           <div className={styles.contact}>
             <h2>Contact</h2>
@@ -47,9 +47,24 @@ export default function Footer() {
           </div>
           <div className={styles.socials}>
             <ul>
-              <li><Link href="">Instagram</Link></li>
-              <li><Link href="">Facebook</Link></li>
-              <li><Link href="">Linkedin</Link></li>
+              <li>
+                <Link 
+                  href="https://www.instagram.com/originblank/" 
+                  target="_blank"
+                  rel="nofollow"
+                >
+                  Instagram
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="https://www.linkedin.com/company/originblank"
+                  target="_blank"
+                  rel="nofollow"
+                >
+                  Linkedin
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
