@@ -1,5 +1,3 @@
-import Accordion from "@/components/molecules/accordion/accordion"
-
 export const metadata = {
   title: "Origin Blank | Independent Brighton-based Branding Agency",
   description: "",
@@ -7,6 +5,8 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="container"></div>
+    <div className="container">
+      
+    </div>
   )
 }

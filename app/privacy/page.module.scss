@@ -1,0 +1,76 @@
+.wrapper {
+  @media (min-width: 1200px) {
+    justify-content: space-between;
+  }
+
+  margin-top: 3rem;
+  margin-left: 0;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 3rem;
+
+
+  & > .intro {
+    & > h1 {
+      font-size: 3.5rem;
+    }
+    & > [role="doc-subtitle"] {
+      color: rgb(var(--foreground-rgb), 0.75);
+      font-size: 1.25rem;
+    }
+  }
+
+  & > .content {
+    max-width: 36rem;
+
+    & > h2 {
+      font-size: 1.266em;
+    }
+
+    & > h3 {
+      font-size: 1.125em;
+    }
+
+    & a {
+      will-change: color;
+      width: fit-content;
+      height: fit-content;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.125rem;
+      position: relative;
+      text-decoration: none;
+      font-weight: 600;
+      color: rgb(var(--hyperlink-rgb));
+      transition: color var(--transition-background);
+
+      &::after {
+        will-change: transform;
+        width: 100%;
+        height: 2px;
+        border-radius: 1px;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        background: rgb(var(--hyperlink-rgb));
+        transition: transform var(--transition-background);
+      }
+
+      &:hover {
+        color: rgb(var(--hyperlink-hover-rgb));
+
+        &::after {
+          background: rgb(var(--hyperlink-hover-rgb));
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+      }
+    }
+  }
+}

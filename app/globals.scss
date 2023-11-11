@@ -135,8 +135,16 @@ p, li {
   hyphens: auto;
 }
 
-p:not(:last-of-type) {
+ul[role="list"] {
   margin-bottom: 2em;
+}
+
+p:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+strong {
+  font-weight: 600;
 }
 
 code {
@@ -169,7 +177,8 @@ code {
   }
 
   width: 100%;
-  margin: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 #root {

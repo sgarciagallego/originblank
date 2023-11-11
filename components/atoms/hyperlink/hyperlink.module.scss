@@ -1,19 +1,22 @@
 .hyperlink {
+  will-change: color;
   width: fit-content;
   height: fit-content;
-  padding: 0.5rem;
-  display: flex;
+  position: relative;
+  display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.125rem;
   position: relative;
   text-decoration: none;
-  font-size: 1.25rem;
   font-weight: 600;
   color: rgb(var(--hyperlink-rgb));
+  transition: color var(--transition-background);
 
   &::after {
+    will-change: transform;
     width: 100%;
     height: 2px;
+    border-radius: 1px;
     transform: scaleX(0);
     transform-origin: bottom right;
     position: absolute;
@@ -24,31 +27,13 @@
     transition: transform var(--transition-background);
   }
 
-  &:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    background: rgb(var(--hyperlink-hover-rgb));
-  }
-  
-  &, svg { 
-    transition: var(--transition-text);
-  }
-
   &:hover {
     color: rgb(var(--hyperlink-hover-rgb));
 
-    > svg {
-      transform: translateX(0.25rem);
-      fill: rgb(var(--hyperlink-hover-rgb));
+    &::after {
+      background: rgb(var(--hyperlink-hover-rgb));
+      transform: scaleX(1);
+      transform-origin: bottom left;
     }
-  }
-
-  > svg {
-    min-width: 30px;
-    max-width: 30px;
-    min-height: 30px;
-    max-height: 30px;
-    fill: rgb(var(--hyperlink-rgb));
-    
   }
 }
