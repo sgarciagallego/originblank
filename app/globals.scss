@@ -14,7 +14,7 @@ $type-ratios: (
 }
 
 $type-base-size: 1.125rem;
-$type-size-ratio: type-ratio("goldenRatio");
+$type-size-ratio: type-ratio("perfectFifth");
 
 $type-levels: 4, 3, 2, 1;
 
@@ -145,6 +145,24 @@ p:not(:last-child) {
 
 strong {
   font-weight: 600;
+}
+
+blockquote {
+  margin-bottom: 2em;
+  padding-left: 1em;
+  position: relative;
+  font-style: italic;
+  
+  &::after {
+    width: 2px;
+    height: 100%;
+    border-radius: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: rgb(var(--orange-rgb));
+  }
 }
 
 code {

@@ -139,6 +139,16 @@ const brockmann = localFont({
   variable: "--font",
 })
 
+export const metadata = {
+  metadataBase: new URL("https://originblank.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    images: '/og-image.png',
+  },
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en-GB" suppressHydrationWarning>
