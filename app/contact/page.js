@@ -11,7 +11,7 @@ export default function AboutPage() {
     <>
       <Intro subtitle={"Contact us"}>
         Come on, <br />
-        let's collaborate!
+        let&apos;s collaborate!
       </Intro>
       <ContactForm />
     </>

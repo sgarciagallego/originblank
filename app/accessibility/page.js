@@ -12,7 +12,7 @@ export default function AccessibilityPage() {
       <div role="doc-subtitle">Accessibility statement</div>
       <h1>Going beyond the aesthetic</h1>
       <blockquote>
-        <p>"Design is a word that has come to mean so much that it's also a word that has come to mean nothing."</p>
+        <p>&quot;Design is a word that has come to mean so much that it&apos;s also a word that has come to mean nothing.&quot;</p>
         <strong>~ Jony Ive</strong>
       </blockquote>
       <p>Here at Origin Blank, we recognise that design extends further than aesthetics; it is a powerful tool that shapes interaction and experience with the sole purpose of solving human problems.</p>
