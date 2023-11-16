@@ -1,7 +1,6 @@
 import styles from "./contactForm.module.scss"
 
 export default function ContactForm() {
-
   return (
     <form
       className="container"
@@ -22,6 +21,11 @@ export default function ContactForm() {
         type="hidden" 
         name="_template" 
         value="table"
+      />
+      <input 
+        type="hidden" 
+        name="_captcha" 
+        value="false"
       />
       <div className={styles.wrapper}>
         <div className={styles.field}>
