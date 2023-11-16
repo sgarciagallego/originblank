@@ -2,7 +2,7 @@ import styles from "./page.module.scss"
 import Hyperlink from "@/components/atoms/hyperlink/hyperlink"
 
 export const metadata = {
-  title: "Origin Blank | Privacy",
+  title: "Privacy | Origin Blank",
   description: "",
 }
 

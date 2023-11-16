@@ -22,7 +22,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className={styles.findUs}>
-            <h2>Find us</h2>
+            <h2>Rendezvous</h2>
             <p>Are you feeling a face-to-face is more efficient? Hit us up, and let&apos;s make it happen!</p>
           </div>
           <div className={styles.contact}>
@@ -30,9 +30,6 @@ export default function Footer() {
             <ul>
               <li>
                 <a href="mailto:hello@originblank.com">hello@originblank.com</a>
-              </li>
-              <li>
-                <a href="tel:+44 7900658494">+44 7900 658 494</a>
               </li>
             </ul>
           </div>

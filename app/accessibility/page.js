@@ -2,7 +2,7 @@ import styles from "./page.module.scss"
 import CtaLight from "@/components/atoms/cta/ctaLight"
 
 export const metadata = {
-  title: "Origin Blank | Accessibility Statement",
+  title: "Going Beyond the Aesthetic | Origin Blank",
   description: "",
 }
 

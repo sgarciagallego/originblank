@@ -83,6 +83,15 @@ $level-size: $type-base-size;
   --P-200-rgb: 231, 244, 159;
   --P-100-rgb: 239, 248, 191;
 
+  --N-100-rgb: 253, 253, 253;
+  --N-200-rgb: 246, 246, 246;
+  --N-300-rgb: 237, 237, 237;
+  --N-400-rgb: 209, 209, 209;
+  --N-500-rgb: 163, 163, 163;
+  --N-600-rgb: 117, 117, 117;
+  --N-700-rgb: 71, 71, 71;
+  --N-800-rgb: 26, 26, 26;
+
   --hyperlink-rgb: 27, 84, 228;
   --hyperlink-hover-rgb: 19, 59, 160;
   --error-rgb: 189, 38, 15;
@@ -111,6 +120,19 @@ body {
   font-size: $type-base-size;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+::-webkit-scrollbar-track {
+  border: solid 0.125rem transparent;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0.5rem 0.5rem rgb(var(--N-200-rgb));
+  border-radius: 0.25rem;
+  border: solid 0.125rem transparent;
 }
 
 img, picture, video, canvas, svg {
