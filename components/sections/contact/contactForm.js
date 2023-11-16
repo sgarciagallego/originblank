@@ -6,7 +6,7 @@ export default function ContactForm() {
     <form
       className="container"
       method="post" 
-      action="https://formsubmit.co/hello@originblank.com"
+      action="https://formsubmit.co/d716a65f9837e6d786c9c08ada2a958e"
     >
       <input 
         type="hidden" 
