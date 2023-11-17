@@ -1,0 +1,47 @@
+@keyframes eyeMove {
+  0%  , 10% {     background-position: 0px 0px}
+  13%  , 40% {     background-position: -15px 0px}
+  43%  , 70% {     background-position: 15px 0px}
+  73%  , 90% {     background-position: 0px 15px}
+  93%  , 100% {     background-position: 0px 0px}
+}
+@keyframes blink {
+  0%  , 10% , 12% , 20%, 22%, 40%, 42% , 60%, 62%,  70%, 72% , 90%, 92%, 98% , 100%
+  { height: 48px}
+  11% , 21% ,41% , 61% , 71% , 91% , 99%
+  { height: 18px}
+}
+
+.wrapper {
+  width: 100vw;
+  height: calc(100svh - 17.125rem);
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 9rem;
+  height: 5rem;
+  border-radius: 3rem;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(var(--pear-rgb));
+
+  &::before,
+  &::after {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    background: rgb(var(--N-100-rgb));
+    background-image:  radial-gradient(circle 0.875rem, rgb(var(--foreground-rgb)) 100%, transparent 0);
+    background-repeat: no-repeat;
+    animation: eyeMove 10s infinite , blink 10s infinite;
+  }
+}

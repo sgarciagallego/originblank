@@ -2,7 +2,7 @@
   margin-top: 5rem;
   margin-bottom: 10rem;
 
-  & [role="doc-subtitle"]  {
+  & > [role="doc-subtitle"]  {
     margin-bottom: 3rem;
 
     @media (min-width: 576px) {

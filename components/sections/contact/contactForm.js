@@ -10,7 +10,7 @@ export default function ContactForm() {
       <input 
         type="hidden" 
         name="_next" 
-        value="https://originblank.com/"
+        value="https://originblank.com/contact/thanks"
       />
       <input 
         type="text" 
