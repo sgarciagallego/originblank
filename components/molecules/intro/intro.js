@@ -1,16 +1,16 @@
 import CtaLight from "@/components/atoms/cta/ctaLight"
 import styles from "./intro.module.scss"
 
-export default function Intro({ 
+export default function Intro({
   subtitle, 
   children, 
   intro, 
   ctaHref, 
-  cta 
+  cta
 }) {
   return (
     <section className={`
-      container 
+      space 
       ${subtitle ? styles.wrapperMin : styles.wrapperMax}
     `}>
       {subtitle && <div role="doc-subtitle">{subtitle}</div>}

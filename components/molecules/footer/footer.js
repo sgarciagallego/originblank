@@ -6,7 +6,7 @@ import CtaDark from "@/components/atoms/cta/ctaDark"
 export default function Footer() {
   return (
     <div className={styles.wrapper}>
-      <footer className="container">
+      <footer className="space">
         <div className={styles.identity}>
           <WordMark />
           <CtaDark href="/contact">Start a project</CtaDark>

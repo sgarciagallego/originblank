@@ -1,0 +1,12 @@
+.wrapper {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+  & > p {
+    max-width: 35rem;
+  }
+
+  & > div {
+    margin-left: auto;
+  }
+}

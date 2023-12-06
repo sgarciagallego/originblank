@@ -30,7 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(var(--pear-rgb));
+  background: rgb(var(--pear));
 
   &::before,
   &::after {
@@ -39,8 +39,8 @@
     border-radius: 50%;
     content: '';
     display: inline-block;
-    background: rgb(var(--N-100-rgb));
-    background-image:  radial-gradient(circle 0.875rem, rgb(var(--foreground-rgb)) 100%, transparent 0);
+    background: rgb(var(--N-100));
+    background-image:  radial-gradient(circle 0.875rem, rgb(var(--foreground)) 100%, transparent 0);
     background-repeat: no-repeat;
     animation: eyeMove 10s infinite , blink 10s infinite;
   }

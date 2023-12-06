@@ -9,7 +9,7 @@
   position: relative;
   text-decoration: none;
   font-weight: 600;
-  color: rgb(var(--hyperlink-rgb));
+  color: rgb(var(--hyperlink));
   transition: color var(--transition-background);
 
   &::after {
@@ -23,15 +23,15 @@
     content: "";
     bottom: 0;
     left: 0;
-    background: rgb(var(--hyperlink-rgb));
+    background: rgb(var(--hyperlink));
     transition: transform var(--transition-background);
   }
 
   &:hover {
-    color: rgb(var(--hyperlink-hover-rgb));
+    color: rgb(var(--hyperlink-hover));
 
     &::after {
-      background: rgb(var(--hyperlink-hover-rgb));
+      background: rgb(var(--hyperlink-hover));
       transform: scaleX(1);
       transform-origin: bottom left;
     }

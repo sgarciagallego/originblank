@@ -28,7 +28,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className={`container ${styles.parent}`}>
+    <header className={`space ${styles.parent}`}>
       <Link href="/" aria-label="Home">
         <Vector name="wordmark" />
       </Link>

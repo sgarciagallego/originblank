@@ -2,7 +2,7 @@
   padding: 2.5rem 0;
   position: relative;
   overflow: hidden;
-  background: rgb(var(--foreground-rgb));
+  background: rgb(var(--foreground));
 }
 
 .identity {
@@ -22,7 +22,7 @@
     height: 100%;
 
     & > path {
-      fill: rgb(var(--background-rgb));
+      fill: rgb(var(--background));
     }
   }
 }
@@ -36,7 +36,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  border-top: 1px solid rgb(var(--background-rgb), 0.2);
+  border-top: 1px solid rgb(var(--background), 0.2);
   padding: 2.5rem 0;
   display: grid;
   grid-template-columns: 1fr;
@@ -46,12 +46,12 @@
   & > .findUs > h2,
   & > .contact > h2 {
     font-size: 1.82025rem;
-    color: rgb(var(--background-rgb));
+    color: rgb(var(--background));
   }
 
   & > .findUs {
     & > p {
-      color: rgb(var(--background-rgb));
+      color: rgb(var(--background));
     }
   }
 
@@ -67,7 +67,7 @@
       & > li,
       & > li > a {
         text-decoration: none;
-        color: rgb(var(--background-rgb));
+        color: rgb(var(--background));
       }
 
       & > li > a {
@@ -86,15 +86,15 @@
           content: "";
           bottom: 0;
           left: 0;
-          background: rgb(var(--background-rgb));
+          background: rgb(var(--background));
           transition: transform var(--transition-background);
         }
   
         &:hover {
-          color: rgb(var(--pear-rgb));
+          color: rgb(var(--pear));
   
           &::after {
-            background: rgb(var(--pear-rgb));
+            background: rgb(var(--pear));
             transform: scaleX(1);
             transform-origin: bottom left;
           }
@@ -118,7 +118,7 @@
     }
   }
 
-  border-top: 1px solid rgb(var(--background-rgb), 0.2);
+  border-top: 1px solid rgb(var(--background), 0.2);
   padding-top: 2.5rem;
   display: flex;
   align-items: center;
@@ -136,7 +136,7 @@
       & > li,
       & > li > a {
         text-decoration: none;
-        color: rgb(var(--background-rgb));
+        color: rgb(var(--background));
         font-size: 0.875rem;
       }
 
@@ -156,15 +156,15 @@
           content: "";
           bottom: 0;
           left: 0;
-          background: rgb(var(--background-rgb));
+          background: rgb(var(--background));
           transition: transform var(--transition-background);
         }
 
         &:hover {
-          color: rgb(var(--pear-rgb));
+          color: rgb(var(--pear));
 
           &::after {
-            background: rgb(var(--pear-rgb));
+            background: rgb(var(--pear));
             transform: scaleX(1);
             transform-origin: bottom left;
           }

@@ -58,43 +58,43 @@ $level-size: $type-base-size;
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-  --foreground-rgb: 40, 46, 5;
-  --background-rgb: 247, 243, 212;
+  --foreground: 40, 46, 5;
+  --background: 247, 243, 212;
 
-  --orange-rgb: 255, 98, 0;
-  --drab-dark-brown-rgb: 40, 46, 5;
-  --pear-rgb: 215, 236, 95;
+  --orange: 255, 98, 0;
+  --drab-dark-brown: 40, 46, 5;
+  --pear: 215, 236, 95;
   
-  --O-500-rgb: 153, 59, 0;
-  --O-400-rgb: 204, 78, 0;
-  --O-300-rgb: 255, 129, 51;
-  --O-200-rgb: 255, 161, 102;
-  --O-100-rgb: 255, 192, 153;
+  --O-500: 153, 59, 0;
+  --O-400: 204, 78, 0;
+  --O-300: 255, 129, 51;
+  --O-200: 255, 161, 102;
+  --O-100: 255, 192, 153;
 
-  --D-500-rgb: 24, 28, 3;
-  --D-400-rgb: 32, 37, 4;
-  --D-300-rgb: 111, 129, 14;
-  --D-200-rgb: 183, 211, 23;
-  --D-100-rgb: 215, 237, 90;
+  --D-500: 24, 28, 3;
+  --D-400: 32, 37, 4;
+  --D-300: 111, 129, 14;
+  --D-200: 183, 211, 23;
+  --D-100: 215, 237, 90;
 
-  --P-500-rgb: 154, 178, 21;
-  --P-400-rgb: 200, 229, 36;
-  --P-300-rgb: 223, 240, 127;
-  --P-200-rgb: 231, 244, 159;
-  --P-100-rgb: 239, 248, 191;
+  --P-500: 154, 178, 21;
+  --P-400: 200, 229, 36;
+  --P-300: 223, 240, 127;
+  --P-200: 231, 244, 159;
+  --P-100: 239, 248, 191;
 
-  --N-100-rgb: 253, 253, 253;
-  --N-200-rgb: 246, 246, 246;
-  --N-300-rgb: 237, 237, 237;
-  --N-400-rgb: 209, 209, 209;
-  --N-500-rgb: 163, 163, 163;
-  --N-600-rgb: 117, 117, 117;
-  --N-700-rgb: 71, 71, 71;
-  --N-800-rgb: 26, 26, 26;
+  --N-100: 253, 253, 253;
+  --N-200: 246, 246, 246;
+  --N-300: 237, 237, 237;
+  --N-400: 209, 209, 209;
+  --N-500: 163, 163, 163;
+  --N-600: 117, 117, 117;
+  --N-700: 71, 71, 71;
+  --N-800: 26, 26, 26;
 
-  --hyperlink-rgb: 27, 84, 228;
-  --hyperlink-hover-rgb: 19, 59, 160;
-  --error-rgb: 189, 38, 15;
+  --hyperlink: 27, 84, 228;
+  --hyperlink-hover: 19, 59, 160;
+  --error: 189, 38, 15;
 
   --transition-background: 260ms ease;
   --transition-text: 130ms ease;
@@ -109,8 +109,8 @@ $level-size: $type-base-size;
 }
 
 html, body {
-  background: rgb(var(--background-rgb));
-  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
 }
 
 body {
@@ -130,7 +130,7 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 0.5rem 0.5rem rgb(var(--N-200-rgb));
+  box-shadow: inset 0 0 0.5rem 0.5rem rgb(var(--N-200));
   border-radius: 0.25rem;
   border: solid 0.125rem transparent;
 }
@@ -148,13 +148,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-p, li, h1, h2, h3, h4 {
+p, li, h1, h2, h3, h4, h5, h6 {
   word-break: break-word;
   margin-top: 0;
-}
-
-p, li {
-  hyphens: auto;
 }
 
 ul[role="list"] {
@@ -183,7 +179,7 @@ blockquote {
     top: 0;
     left: 0;
     content: "";
-    background: rgb(var(--orange-rgb));
+    background: rgb(var(--orange));
   }
 }
 
@@ -191,7 +187,7 @@ code {
   font-family: var(--font-mono);
 }
 
-.container {
+.space {
   @media (min-width: 320px) {
     max-width: 280px;
   }
@@ -223,4 +219,16 @@ code {
 
 #root {
   isolation: isolate;
+}
+
+.screenReaderVisible {
+  width: 1px !important;
+  height: 1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
 }

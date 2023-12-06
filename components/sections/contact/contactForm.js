@@ -3,7 +3,7 @@ import styles from "./contactForm.module.scss"
 export default function ContactForm() {
   return (
     <form
-      className="container"
+      className="space"
       method="post" 
       action="https://formsubmit.co/d716a65f9837e6d786c9c08ada2a958e"
     >

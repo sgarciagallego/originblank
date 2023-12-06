@@ -4,22 +4,22 @@
   cursor: pointer;
   padding: 0.75rem 1.5rem;
   display: inline-block;
-  border: 2px solid rgb(var(--drab-dark-brown-rgb));
+  border: 2px solid rgb(var(--drab-dark-brown));
   border-radius: 0.25rem;
-  background: rgb(var(--background-rgb));
-  box-shadow: rgb(var(--drab-dark-brown-rgb)) 0.25rem 0.25rem 0 0;
-  color: rgb(var(--drab-dark-brown-rgb));
+  background: rgb(var(--background));
+  box-shadow: rgb(var(--drab-dark-brown)) 0.25rem 0.25rem 0 0;
+  color: rgb(var(--drab-dark-brown));
   text-decoration: none;
   font-weight: 600;
   text-align: center;
   transition: var(--transition-text);
 
   &:hover {
-    background: rgb(var(--P-100-rgb));
+    background: rgb(var(--P-100));
   }
 
   &:active {
-    box-shadow: rgb(var(--drab-dark-brown-rgb)) 0.125rem 0.125rem 0 0;
+    box-shadow: rgb(var(--drab-dark-brown)) 0.125rem 0.125rem 0 0;
     transform: translate(0.125rem, 0.125rem);
   }
 }

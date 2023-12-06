@@ -4,22 +4,22 @@
   cursor: pointer;
   padding: 0.75rem 1.5rem;
   display: inline-block;
-  border: 2px solid rgb(var(--D-500-rgb));
+  border: 2px solid rgb(var(--D-500));
   border-radius: 0.25rem;
-  background: rgb(var(--pear-rgb));
-  box-shadow: rgb(var(--D-500-rgb)) 0.25rem 0.25rem 0 0;
-  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--pear));
+  box-shadow: rgb(var(--D-500)) 0.25rem 0.25rem 0 0;
+  color: rgb(var(--foreground));
   text-decoration: none;
   font-weight: 600;
   text-align: center;
   transition: var(--transition-text);
 
   &:hover {
-    background: rgb(var(--P-300-rgb));
+    background: rgb(var(--P-300));
   }
 
   &:active {
-    box-shadow: rgb(var(--D-500-rgb)) 0.125rem 0.125rem 0 0;
+    box-shadow: rgb(var(--D-500)) 0.125rem 0.125rem 0 0;
     transform: translate(0.125rem, 0.125rem);
   }
 }
