@@ -17,6 +17,8 @@ const packages = [
     imageryAndIconography: false,
     webDesign: false,
     webDevelopment: false,
+    extraCharges: "",
+    duration: 1,
   },
   {
     id: "package_two",
@@ -32,6 +34,8 @@ const packages = [
     imageryAndIconography: true,
     webDesign: false,
     webDevelopment: false,
+    extraCharges: "",
+    duration: 5,
   },
   {
     id: "package_three",
@@ -47,6 +51,8 @@ const packages = [
     imageryAndIconography: false,
     webDesign: true,
     webDevelopment: true,
+    extraCharges: "Website exceeding 10 pages",
+    duration: 4,
   },
   {
     id: "package_four",
@@ -62,25 +68,31 @@ const packages = [
     imageryAndIconography: true,
     webDesign: true,
     webDevelopment: true,
+    extraCharges: "Website exceeding 10 pages",
+    duration: 9,
   },
 ]
 
 const formatServiceType = (service) => {
   const words = service.match(/[A-Za-z][a-z]*/g) || []
-  return words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+  const firstWord = words[0] || ""
+  const restOfWords = words.slice(1).map(word => word.toLowerCase())
+  return [firstWord.charAt(0).toUpperCase() + firstWord.slice(1), ...restOfWords].join(" ")
 }
 
 export default function PackagesTable() {
   const services = [
-    'values',
-    'voiceAndMessaging',
-    'colourPalette',
-    'logo',
-    'typography',
-    'imageryAndIconography',
-    'webDesign',
-    'webDevelopment',
-  ];
+    "duration",
+    "values",
+    "voiceAndMessaging",
+    "colourPalette",
+    "logo",
+    "typography",
+    "imageryAndIconography",
+    "webDesign",
+    "webDevelopment",
+    "extraCharges",
+  ]
 
   return (
     <section className={`space ${styles.wrapper}`}>
@@ -92,7 +104,7 @@ export default function PackagesTable() {
           <tr>
             <th>
               <h2>Not sure which package is right for you?</h2>
-              <p>We respect your time, and we know it's valuable. While our rates are competitive, we get that it might not suit every budget. Being transparent helps us save time for everyone.</p>
+              <p>We respect your time, and we know it&apos;s valuable. While our rates are competitive, we get that it might not suit every budget. Being transparent helps us save time for everyone.</p>
             </th>
             {packages.map(cell => (
               <td key={cell.id}>
@@ -113,9 +125,23 @@ export default function PackagesTable() {
               </th>
               {packages.map(cell => (
                 <td key={cell.id}>
-                  <Vector
-                    name={cell[service] ? "check" : "uncheck"}
-                  />
+                  {cell.hasOwnProperty("extraCharges") && service === "extraCharges" ? (
+                    cell.extraCharges !== "" ? (
+                      cell.extraCharges
+                    ) : (
+                      <Vector name="minus" />
+                    )
+                  ) : cell.hasOwnProperty("duration") && service === "duration" ? (
+                    cell.duration !== "" ? (
+                      `${cell.duration} ${cell.duration === 1 ? "week" : "weeks"}`
+                    ) : (
+                      <Vector name="uncheck" />
+                    )
+                  ) : cell[service] ? (
+                    <Vector name="check" />
+                  ) : (
+                    <Vector name="uncheck" />
+                  )}
                 </td>
               ))}
             </tr>
