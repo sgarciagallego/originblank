@@ -121,7 +121,22 @@ export default function PackagesTable() {
   return (
     <section className={`space ${styles.wrapper}`}>
       {viewportWidth < 768 ? (
-        <></>
+        <>
+          {packages.map(plan => (
+            <article
+              key={plan.id}
+              className={styles.mobileCard}
+            >
+              <h2>{plan.heading}</h2>
+              <p>{plan.desc}</p>
+              <div className={styles.priceTag}>
+                <span className={styles.currency}>£</span>
+                {plan.price}
+              </div>
+              <CtaLight href="/contact">Enquire</CtaLight>
+            </article>
+          ))}
+        </>
       ) : viewportWidth < 992 ? (
         <table className={styles.tabletPackages}>
           <caption className="screenReaderVisible">

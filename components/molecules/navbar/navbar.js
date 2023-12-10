@@ -27,6 +27,10 @@ export default function Navbar() {
     setMobileMenuVisible(!mobileMenuVisible)
   }
 
+  const handleLinkClick = () => {
+    setMobileMenuVisible(false)
+  }
+
   return (
     <header className={`space ${styles.parent}`}>
       <Link href="/" aria-label="Home">
@@ -49,10 +53,10 @@ export default function Navbar() {
           {mobileMenuVisible && (
             <nav className={styles.mobileContainer}>
               <ul>
-                <li><Link href="/about">About</Link></li>
-                <li><Link href="/work">Work</Link></li>
-                <li><Link href="/packages">Packages</Link></li>
-                <li><Link href="/contact">Contact</Link></li>
+                <li><Link href="/about" onClick={handleLinkClick}>About</Link></li>
+                <li><Link href="/work" onClick={handleLinkClick}>Work</Link></li>
+                <li><Link href="/packages" onClick={handleLinkClick}>Packages</Link></li>
+                <li><Link href="/contact" onClick={handleLinkClick}>Contact</Link></li>
               </ul>
             </nav>
           )}

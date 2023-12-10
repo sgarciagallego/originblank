@@ -39,7 +39,7 @@
     border-radius: 50%;
     content: '';
     display: inline-block;
-    background: rgb(var(--N-100));
+    background: rgb(var(--T-100));
     background-image:  radial-gradient(circle 0.875rem, rgb(var(--foreground)) 100%, transparent 0);
     background-repeat: no-repeat;
     animation: eyeMove 10s infinite , blink 10s infinite;

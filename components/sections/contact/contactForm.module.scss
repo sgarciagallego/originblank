@@ -55,18 +55,18 @@
   & > input,
   & > textarea {
     will-change: border;
-    border: 0.125rem solid transparent;
+    border: 1.5px solid transparent;
     border-radius: 0.25rem;
     padding: 0.75em 1.125em;
-    background: rgb(var(--N-100), 0.75);
+    background: rgb(var(--T-100));
     transition: var(--transition-background);
 
     &::placeholder {
-      color: rgb(var(--N-600));
+      color: rgb(var(--T-600));
     }
 
     &:hover {
-      border: 0.125rem solid rgb(var(--N-400));
+      border: 1.5px solid rgb(var(--T-400));
     }
   }
 }
