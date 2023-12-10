@@ -8,7 +8,7 @@ export default function MinusVector(props) {
       {...props}
     >
       <path
-        fill="rgb(var(--N-500), 0.8)"
+        fill="rgb(var(--T-600))"
         d="M19,11H5a1,1,0,0,0,0,2H19a1,1,0,0,0,0-2Z" 
       />
     </svg>
