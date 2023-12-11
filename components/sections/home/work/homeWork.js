@@ -27,7 +27,7 @@ const cards = [
       900,
     ],
     project: "Purple Beard",
-    desc: "Revitalising one of the UK's leading alternative education innovators.",
+    desc: "Revitalising one of the UK's leading education innovators.",
     provided: [
       "Brand strategy",
       "Visual identity",
@@ -83,9 +83,13 @@ export default function HomeWork() {
               quality={100}
             />
           </div>
-          {card.project !== '' && <h2>{card.project}</h2>}
-          {card.desc !== '' && <p>{card.desc}</p>}
-          {card.provided.length > 0 && <ServiceTags services={card.provided} />}
+          {card.project !== "" && <h2>{card.project}</h2>}
+          {card.desc !== "" && <p>{card.desc}</p>}
+          {card.provided.length > 0 && (
+            <div className={styles.container}>
+              <ServiceTags services={card.provided} />
+            </div>
+          )}
         </Link>
       ))}
     </section>
