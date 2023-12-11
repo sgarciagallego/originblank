@@ -179,7 +179,8 @@ strong {
 }
 
 small {
-  font-size: 0.875rem;
+  font-size: max(0.667em, 0.667rem);
+
 }
 
 blockquote {

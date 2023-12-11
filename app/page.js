@@ -1,6 +1,7 @@
 import HomeIntro from "@/components/sections/home/intro/homeIntro"
 import HomeAbout from "@/components/sections/home/about/homeAbout"
 import ServiceTags from "@/components/molecules/tags/services/tags"
+import HomeWork from "@/components/sections/home/work/homeWork"
 
 export const metadata = {
   title: "Origin Blank | Independent Branding Agency",
@@ -11,7 +12,7 @@ export default function Home() {
   return (
     <>
       <HomeIntro />
-      <ServiceTags />
+      <HomeWork />
       <HomeAbout />
     </>
   )

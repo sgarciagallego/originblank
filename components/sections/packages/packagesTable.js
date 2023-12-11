@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./packagesTable.module.scss"
 import Vector from "@/components/atoms/vector"
 import CtaLight from "@/components/atoms/cta/ctaLight"
+import ServiceTags from "@/components/molecules/tags/services/tags";
 
 const packages = [
   {
@@ -85,7 +86,6 @@ const formatServiceType = (service) => {
 
 export default function PackagesTable() {
   const [viewportWidth, setViewportWidth] = useState(0)
-  const [mobileMenuVisible, setMobileMenuVisible] = useState(false)
 
   useEffect(() => {
     const updateViewportWidth = () => {
@@ -101,8 +101,10 @@ export default function PackagesTable() {
     }
   })
 
-  const toggleMobileMenu = () => {
-    setMobileMenuVisible(!mobileMenuVisible)
+  const extractServices = (packageObj) => {
+    return Object.keys(packageObj)
+    .filter((key) => key !== 'recommended' && typeof packageObj[key] === 'boolean' && packageObj[key])
+    .map(formatServiceType)
   }
 
   const services = [
@@ -129,6 +131,7 @@ export default function PackagesTable() {
             >
               <h2>{plan.heading}</h2>
               <p>{plan.desc}</p>
+              <ServiceTags services={extractServices(plan)} />
               <div className={styles.priceTag}>
                 <span className={styles.currency}>£</span>
                 {plan.price}
