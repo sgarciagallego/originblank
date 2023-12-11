@@ -34,7 +34,7 @@ export default function ContactForm() {
             id="inputOne"
             type="text"
             name="name"
-            placeholder="John Doe"
+            placeholder="Enter full name"
             required
           />
         </div>
@@ -45,7 +45,7 @@ export default function ContactForm() {
               id="inputTwo"
               type="email"
               name="email"
-              placeholder="john@brilliantbrand.com"
+              placeholder="name@company.com"
               required
             />
           </div>
@@ -55,7 +55,7 @@ export default function ContactForm() {
               id="inputThree"
               type="tel"
               name="phoneNumber"
-              placeholder="+44 0208 1234567"
+              placeholder="Enter phone number"
             />
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function ContactForm() {
               id="inputFour"
               type="text"
               name="companyName"
-              placeholder="Brilliant Brand"
+              placeholder="Name of your company"
             />
           </div>
           <div className={styles.field}>
@@ -75,7 +75,7 @@ export default function ContactForm() {
               id="inputFive"
               type="text"
               name="website"
-              placeholder="brilliantbrand.com"
+              placeholder="company.com"
             />
           </div>
         </div>

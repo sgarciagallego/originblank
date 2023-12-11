@@ -139,6 +139,29 @@ const brockmann = localFont({
   variable: "--font",
 })
 
+const basierMono = localFont({
+  src: [
+    {
+      path: "/fonts/basiersquaremono-regular-webfont.ttf",
+      weight: "400",
+      style: "normal"
+    },
+    {
+      path: "/fonts/basiersquaremono-regular-webfont.woff",
+      weight: "400",
+      style: "normal"
+    },
+    {
+      path: "/fonts/basiersquaremono-regular-webfont.woff2",
+      weight: "400",
+      style: "normal"
+    },
+  ],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-mono",
+})
+
 export const metadata = {
   metadataBase: new URL("https://originblank.com"),
   alternates: {
@@ -152,7 +175,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en-GB" suppressHydrationWarning>
-      <body className={brockmann.variable}>
+      <body className={`
+        ${brockmann.variable} 
+        ${basierMono.variable}
+      `}>
         <Navbar />
         {children}
         <Footer />

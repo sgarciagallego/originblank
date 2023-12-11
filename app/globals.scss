@@ -54,7 +54,7 @@ $level-size: $type-base-size;
   --border-radius: 12px;
 
   --font: Brockmann, system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+  --font-mono: Basier, ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
@@ -135,9 +135,13 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 0.5rem 0.5rem rgb(var(--N-200));
+  box-shadow: inset 0 0 0.5rem 0.5rem rgb(var(--T-600));
   border-radius: 0.25rem;
-  border: solid 0.125rem transparent;
+  border: 0.125rem solid transparent;
+
+  &:hover {
+    box-shadow: inset 0 0 0.5rem 0.5rem rgb(var(--T-800));
+  }
 }
 
 img, picture, video, canvas, svg {
@@ -162,12 +166,20 @@ ul[role="list"] {
   margin-bottom: 2em;
 }
 
+p.large {
+  font-size: calc(1em * 2);
+}
+
 p:not(:last-child) {
   margin-bottom: 2em;
 }
 
 strong {
   font-weight: 600;
+}
+
+small {
+  font-size: 0.875rem;
 }
 
 blockquote {
