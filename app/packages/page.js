@@ -9,7 +9,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Intro subtitle={"Our Packages"}>
+      <Intro element="section" subtitle={"Our Packages"}>
         Expose your canvas
       </Intro>
       <PackagesTable />

@@ -50,7 +50,7 @@ export default function HomeIntro() {
   return (
     <>
       <div id="trigger" style={{ height: "0", position: "absolute", top: "0" }}></div>
-      <Intro>
+      <Intro element="section">
         <span>
           {keyword.split("").map((char, index) => (
             <span

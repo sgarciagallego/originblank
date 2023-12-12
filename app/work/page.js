@@ -8,7 +8,7 @@ export const metadata = {
 export default function WorkPage() {
   return (
     <>
-      <Intro subtitle={"Our work"}>
+      <Intro element="section" subtitle="Our work">
         From blank to brilliance
       </Intro>
     </>

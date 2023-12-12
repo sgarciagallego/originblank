@@ -8,7 +8,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Intro subtitle={"About us"}>
+      <Intro element="section" subtitle={"About us"}>
         Looking into our origin
       </Intro>
     </>
