@@ -17,6 +17,13 @@
 }
 
 .wrapperMax {
-  margin-top: 10rem;
+  @media (min-width: 320px) and (max-width: 767px) {
+    margin-top: 7.5rem;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 10rem;
+  }
+
   margin-bottom: 10rem;
 }
