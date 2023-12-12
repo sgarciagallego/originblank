@@ -34,7 +34,7 @@ $level-size: $type-base-size;
       $fluid-reduction: if($level-size > 4, 0.5, 0.33);
       $fluid-min: $level-unitless - ($fluid-reduction * $level-unitless);
       $fluid-min: if($fluid-min > $type-base-size, $fluid-min, 1);
-      $fluid-scaler: ($level-unitless - $fluid-min) + 4vw;
+      $fluid-scaler: ($level-unitless - $fluid-min) + 3.1vw;
 
       font-size: clamp(
         #{$fluid-min}rem,
@@ -167,7 +167,7 @@ ul[role="list"] {
 }
 
 p.large {
-  font-size: calc(1em * 2);
+  font-size: max(1.25em, min(3vw, 2em));
 }
 
 p:not(:last-child) {

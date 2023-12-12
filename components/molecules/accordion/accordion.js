@@ -28,6 +28,8 @@ export default function Accordion({
   id, 
   header, 
   description,
+  listName,
+  list,
   active=false
 }) {
   const [accordionOpen, setAccordionOpen] = useState(false)
@@ -35,6 +37,9 @@ export default function Accordion({
   useEffect(() => {
     setAccordionOpen(active)
   }, [active])
+
+  const hasDescription = !!description
+  const hasList = listName && list && list.length > 0
 
   return (
     <div className={styles.wrapper}>
@@ -59,10 +64,18 @@ export default function Accordion({
         role="region"
         className={accordionOpen ? styles.open : styles.close}
       >
-        <div>
-          <p>
-            {description}
-          </p>
+        <div className={styles.flex}>
+          {hasDescription && <div><p>{description}</p></div>}
+          {hasList && (
+            <div>
+              <h4>{listName}</h4>
+              <ul role="list">
+                {list.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
     </div>
   </div>
