@@ -1,16 +1,5 @@
 .wrapper {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-
-  & > [role="doc-subtitle"] {
-    margin-bottom: 1em;
-    color: rgb(var(--foreground-rgb), 0.75);
-    font-size: 1.25rem;
-  }
-
-  & > h1 {
-    font-size: 3.5rem;
-  }
+  margin-bottom: 5rem; 
 
   & > blockquote,
   & > p  {

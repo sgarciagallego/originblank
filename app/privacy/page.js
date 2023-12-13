@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function PrivacyPage() {
   return (
-    <main className={`container ${styles.wrapper}`}>
+    <main className={`space ${styles.wrapper}`}>
       <div className={styles.intro}>
         <h1>Terms & Privacy</h1>
         <div role="doc-subtitle">

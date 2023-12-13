@@ -1,3 +1,4 @@
+import Intro from "@/components/molecules/intro/intro"
 import styles from "./page.module.scss"
 import CtaLight from "@/components/atoms/cta/ctaLight"
 
@@ -8,9 +9,10 @@ export const metadata = {
 
 export default function AccessibilityPage() {
   return (
-    <main className={`container ${styles.wrapper}`}>
-      <div role="doc-subtitle">Accessibility statement</div>
-      <h1>Going beyond the aesthetic</h1>
+    <main className={`space ${styles.wrapper}`}>
+      <Intro subtitle="Accessibility statement">
+        Going beyond the aesthetic
+      </Intro>
       <blockquote>
         <p>&quot;Design is a word that has come to mean so much that it&apos;s also a word that has come to mean nothing.&quot;</p>
         <strong>~ Jony Ive</strong>
