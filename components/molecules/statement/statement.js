@@ -3,7 +3,7 @@ import Subtitle from "@/components/atoms/subtitle/subtitle"
 import Hyperlink from "@/components/atoms/hyperlink/hyperlink"
 
 export default function Statement({ element, subtitle, children, linkHref, link }) {
-  const Element = element || {element}
+  const Element = element || "div"
 
   return (
     <Element className={`space ${styles.wrapper}`}>
