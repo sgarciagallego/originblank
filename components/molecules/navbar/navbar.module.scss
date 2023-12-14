@@ -10,7 +10,7 @@
     max-width: 11rem;
     height: 100%;
 
-    > path {
+    & > path {
       fill: rgb(var(--foreground));
     }
   }
@@ -53,7 +53,7 @@
       }
     }
 
-    > span {
+    & > span {
       width: 100%;
       height: 0.25rem;
       border-radius: 0.125rem;
@@ -78,31 +78,30 @@
   }
 
   .mobileContainer {
-    z-index: 9;
     width: 100vw;
-    height: 100svh;
-    margin: 0 -100% 0 -100% !important;
-    margin: 0 calc(50% - 50vw) 0 calc(50% - 50vw) !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
+    z-index: 9;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background: rgb(var(--background));
-
-    > ul {
+  
+    & > ul {
+      height: 100%;
       padding: 0;
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
       gap: 3rem;
       list-style-type: none;
       text-align: center;
-
-      > li {
+  
+      & > li {
         margin: 0.5rem;
-
-        > a {
+  
+        & > a {
           padding: 0.5rem;
           color: rgb(var(--foreground));
           text-decoration: none;
@@ -111,15 +110,15 @@
         }
       }
     }
-  }
+  }  
 
   .container {
-    > ul {
+    & > ul {
       display: flex;
       gap: 1rem;
       list-style-type: none;
 
-      > li {
+      & > li {
         &:not(:last-of-type) {
           margin: 0.875rem;
         }
@@ -128,7 +127,7 @@
           margin: 0.875rem 0 0.875rem 0.875rem;
         }
 
-        > a {
+        & > a {
           padding: 0.125rem 0;
           display: inline-block;
           position: relative;

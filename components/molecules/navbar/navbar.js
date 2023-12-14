@@ -25,6 +25,12 @@ export default function Navbar() {
 
   const toggleMobileMenu = () => {
     setMobileMenuVisible(!mobileMenuVisible)
+
+    if (!mobileMenuVisible) {
+      document.body.style.position = "fixed"
+    } else {
+      document.body.style.position = ""
+    }
   }
 
   const handleLinkClick = () => {
