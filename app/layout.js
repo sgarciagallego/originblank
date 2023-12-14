@@ -1,5 +1,6 @@
-import localFont from "next/font/local"
 import "./globals.scss"
+import localFont from "next/font/local"
+import { Analytics } from "@vercel/analytics/react"
 import Navbar from "@/components/molecules/navbar/navbar"
 import Footer from "@/components/molecules/footer/footer"
 
@@ -182,6 +183,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
