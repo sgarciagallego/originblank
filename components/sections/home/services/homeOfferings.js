@@ -4,7 +4,7 @@ import Accordion from "@/components/molecules/accordion/accordion"
 const offerings = [
   {
     header: "Strategy and Alignment",
-    description: "This is a description.",
+    description: "Charting your brand compass to navigate your market, craft your story, and cultivate meaningful connection.",
     listName: "Expertise",
     list: [
       "Market and consumer insight",
@@ -18,7 +18,7 @@ const offerings = [
   },
   {
     header: "Purpose-driven Design",
-    description: "This is a description.",
+    description: "Shaping brands that resonate at every touchpoint. We design with purpose, allowing your story to shine through your brand.",
     listName: "Expertise",
     list: [
       "Brand design",
@@ -32,7 +32,7 @@ const offerings = [
   },
   {
     header: "Digital experience",
-    description: "This is a description.",
+    description: "Building fluid websites that captivate, convert, and conquer. Your digital home needs to be welcoming.",
     listName: "Expertise",
     list: [
       "Wireframes and prototyping",

@@ -30,8 +30,10 @@
 
     & > div {
       will-change: transform;
-      width: 2rem;
-      height: 2rem;
+      min-width: 2rem;
+      max-width: 2rem;
+      min-height: 2rem;
+      max-height: 2rem;
       position: relative;
       transition: var(--transition-background);
 
@@ -65,8 +67,8 @@
     display: grid;
     overflow: hidden; 
     transition: 
-      grid-template-rows var(--transition-background),
-      opacity var(--transition-background);
+    grid-template-rows var(--transition-background),
+    opacity var(--transition-background);
 
     &.open {
       grid-template-rows: 1fr;

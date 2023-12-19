@@ -1,7 +1,7 @@
 import Statement from "@/components/molecules/statement/statement"
 
 const content = {
-  aboutUs: "At Origin Blank, we exist to aid brands, big and small, to reach their people. Experience is everything to a person, and we take pleasure in supplying meaningful change through design, digital experience, and strategy, resulting in a bond between customer and company like never before.",
+  aboutUs: "At Origin Blank, we motion the connection between brands and people. Our passion for design, digital experience, and strategy cultivates bonds that resonate with customers and experiences that adapt with growth.",
 }
 
 export default function HomeAbout() {

@@ -45,22 +45,31 @@ export default function Footer() {
           <div className={styles.socials}>
             <ul>
               <li>
-                <Link 
+                <a 
                   href="https://www.instagram.com/originblank/" 
                   target="_blank"
                   rel="nofollow"
                 >
                   Instagram
-                </Link>
+                </a>
               </li>
               <li>
-                <Link 
+                <a
+                  href=""
+                  target="_blank"
+                  rel="nofollow"
+                >
+                  TikTok
+                </a>
+              </li>
+              <li>
+                <a 
                   href="https://www.linkedin.com/company/originblank"
                   target="_blank"
                   rel="nofollow"
                 >
                   Linkedin
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
