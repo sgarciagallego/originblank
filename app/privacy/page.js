@@ -12,11 +12,12 @@ export default function PrivacyPage() {
       <div className={styles.intro}>
         <h1>Terms & Privacy</h1>
         <div role="doc-subtitle">
-          Updated on <time dateTime="2023-11-10">November 10, 2023</time>
+          Updated on <time dateTime="2023-12-21">December 21, 2023</time>
         </div>
       </div>
       <div className={styles.content}>
-        <p>This privacy policy for Origin Blank Ltd. (doing business as Origin Blank) (&apos;we&apos;, &apos;us&apos;, or &apos;our&apos;), describes how and why we might collect, store, use, and/or share (&apos;process&apos;) your information when you use our services (&apos;Services&apos;), such as when you:</p>
+        <p>Origin Blank is a company registered in England and Wales (company registration number: 15362357).</p>
+        <p>This privacy policy for Origin Blank Ltd (trading as Origin Blank) (&apos;we&apos;, &apos;us&apos;, or &apos;our&apos;), describes how and why we might collect, store, use, and/or share (&apos;process&apos;) your information when you use our services (&apos;Services&apos;), such as when you:</p>
         <ul role="list">
           <li>Visit our website at <Hyperlink href="/">originblank.com</Hyperlink>, or any website of ours that links to this privacy policy.</li>
           <li>Engage with us in other related ways, including any sales, marketing, or events.</li>
