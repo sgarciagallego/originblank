@@ -37,7 +37,8 @@ export default function Footer() {
         <div className={styles.critical}>
           <div className={styles.legal}>
             <ul>
-              <li>© 2023 Origin Blank. All rights reserved.</li>
+              <li>© 2023 Origin Blank Ltd.</li>
+              <li>Company Reg: 15362357</li>
               <li><Link href="/privacy">Privacy</Link></li>
               <li><Link href="/accessibility">Accessibility</Link></li>
             </ul>
