@@ -6,9 +6,9 @@ import ServiceTags from "@/components/molecules/tags/services/tags"
 const cards = [
   {
     id: "card_one",
-    href: "",
+    href: "/work/purple-beard",
     image: [
-      "/placeholder.jpg",
+      "/work/purple-beard/purplebeard-overview-2000x1500.jpg",
       "description",
       320,
       180,
@@ -34,39 +34,7 @@ const cards = [
       "Web design",
       "Web development",
     ],
-  },
-  {
-    id: "card_three",
-    href: "",
-    image: [
-      "/placeholder.jpg",
-      "description",
-      800,
-      600,
-    ],
-    project: "Vasave",
-    desc: "",
-    provided: [
-      "Web design",
-      "Web development"
-    ],
-  },
-  {
-    id: "card_four",
-    href: "",
-    image: [
-      "/placeholder.jpg",
-      "description",
-      400,
-      300,
-    ],
-    project: "Restored Eden Physiotherapy",
-    desc: "",
-    provided: [
-      "Web design",
-      "Web development"
-    ],
-  },
+  }
 ]
 
 export default function HomeWork() {

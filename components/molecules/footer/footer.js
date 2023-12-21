@@ -38,7 +38,17 @@ export default function Footer() {
           <div className={styles.legal}>
             <ul>
               <li>© 2023 Origin Blank Ltd.</li>
-              <li>Company no: &zwj;15362357</li>
+              <li>
+                Company no:
+                {" "}
+                <a 
+                  href="https://find-and-update.company-information.service.gov.uk/company/15362357" 
+                  target="_blank"
+                  rel="nofollow"
+                >
+                  15362357
+                </a>
+              </li>
               <li><Link href="/privacy">Privacy</Link></li>
               <li><Link href="/accessibility">Accessibility</Link></li>
             </ul>
