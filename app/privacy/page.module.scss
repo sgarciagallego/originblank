@@ -34,41 +34,15 @@
 
     & a {
       will-change: color;
-      width: fit-content;
-      height: fit-content;
       position: relative;
-      display: inline-flex;
-      align-items: center;
       gap: 0.125rem;
-      position: relative;
       text-decoration: none;
       font-weight: 600;
       color: rgb(var(--hyperlink));
-      transition: color var(--transition-background);
-
-      &::after {
-        will-change: transform;
-        width: 100%;
-        height: 2px;
-        border-radius: 1px;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        position: absolute;
-        content: "";
-        bottom: 0;
-        left: 0;
-        background: rgb(var(--hyperlink));
-        transition: transform var(--transition-background);
-      }
+      transition: color var(--transition-text);
 
       &:hover {
         color: rgb(var(--hyperlink-hover));
-
-        &::after {
-          background: rgb(var(--hyperlink-hover));
-          transform: scaleX(1);
-          transform-origin: bottom left;
-        }
       }
     }
   }
