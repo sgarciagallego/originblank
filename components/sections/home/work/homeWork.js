@@ -21,7 +21,7 @@ const cards = [
     id: "card_two",
     href: "/work/purple-beard",
     image: [
-      "/placeholder.jpg",
+      "/work/purple-beard/purplebeard-logo-1200x900.jpg",
       "description",
       1200,
       900,

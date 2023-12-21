@@ -22,7 +22,7 @@ const packages = [
     webDesign: false,
     webDevelopment: false,
     extraCharges: "",
-    duration: 1,
+    minimumDuration: 1,
   },
   {
     id: "package_two",
@@ -39,7 +39,7 @@ const packages = [
     webDesign: false,
     webDevelopment: false,
     extraCharges: "",
-    duration: 5,
+    minimumDuration: 5,
   },
   {
     id: "package_three",
@@ -56,7 +56,7 @@ const packages = [
     webDesign: true,
     webDevelopment: true,
     extraCharges: "Website exceeding 10 pages",
-    duration: 4,
+    minimumDuration: 4,
   },
   {
     id: "package_four",
@@ -73,7 +73,7 @@ const packages = [
     webDesign: true,
     webDevelopment: true,
     extraCharges: "Website exceeding 10 pages",
-    duration: 9,
+    minimumDuration: 9,
   },
 ]
 
@@ -108,7 +108,7 @@ export default function PackagesTable() {
   }
 
   const services = [
-    "duration",
+    "minimumDuration",
     "values",
     "voiceAndMessaging",
     "colourPalette",
@@ -179,9 +179,9 @@ export default function PackagesTable() {
                         ) : (
                           <Vector name="minus" />
                         )
-                      ) : cell.hasOwnProperty("duration") && service === "duration" ? (
-                        cell.duration !== "" ? (
-                          `${cell.duration} ${cell.duration === 1 ? "week" : "weeks"}`
+                      ) : cell.hasOwnProperty("minimumDuration") && service === "minimumDuration" ? (
+                        cell.minimumDuration !== "" ? (
+                          `${cell.minimumDuration} ${cell.minimumDuration === 1 ? "week" : "weeks"}`
                         ) : (
                           <Vector name="uncheck" />
                         )
@@ -231,9 +231,9 @@ export default function PackagesTable() {
                       ) : (
                         <Vector name="minus" />
                       )
-                    ) : cell.hasOwnProperty("duration") && service === "duration" ? (
-                      cell.duration !== "" ? (
-                        `${cell.duration} ${cell.duration === 1 ? "week" : "weeks"}`
+                    ) : cell.hasOwnProperty("minimumDuration") && service === "minimumDuration" ? (
+                      cell.minimumDuration !== "" ? (
+                        `${cell.minimumDuration} ${cell.minimumDuration === 1 ? "week" : "weeks"}`
                       ) : (
                         <Vector name="uncheck" />
                       )
